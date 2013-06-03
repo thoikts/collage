@@ -1,0 +1,113 @@
+/**
+  * Welcome modal popup
+  */
+
+.welcome {
+	height: $welcome-modal-height;
+	width: $welcome-modal-width;
+	margin-left: -$welcome-modal-width/2;
+	top: 140px; 
+	left: 50%;
+	position: fixed;
+}
+
+.welcome-title {
+	height: 82px;
+	width: 180px;
+	margin: auto;
+	position: relative;
+	top: -140px;
+	@include welcome_header();
+}
+
+.welcome-collage {
+	height: 335px;
+	width: 335px;
+	float: right;
+	position: relative;
+	left: 80px;
+	top: -80px;
+	@include welcome_collage();
+	//-webkit-transition: rotateCollage 0.1s ease-in 3s;
+	-webkit-transform: rotate(3deg);
+	@include transition(0.2s, ease-in, transform, 2s);
+}
+
+.welcome-text {
+	font-family: HelveticaNeue-Light;
+	font-size: $welcome-text-size;
+	@include grey-text-gradient();
+}
+
+.collage-text {
+	position: relative;
+	top: 13px;
+	left: 2px;
+}
+
+.services {
+
+	p {
+		font-size: 20px;
+		float: left;
+		margin: 10px 0;
+	}
+
+	.logos {
+
+		margin: 10px 0;
+		padding-left: 20px;
+		display: inline-block;
+		height: 26px;
+
+		li {
+			display: inline-block;
+		}
+		
+		.facebook {
+			@include welcome_facebook();
+		}
+
+		.flickr {
+			@include welcome_flickr();
+		}
+
+		.instagram {
+			@include welcome_instagram();
+		}
+	}
+}
+
+.close-reveal-modal {
+	position: relative;
+	left: 50%;
+	margin-left: -$button-width / 2;
+	display: block;
+	top: 80px;
+}
+
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+	}
+
+.reveal-modal {
+	visibility: hidden;
+	background: #eee url('../images/welcome/modal-gloss.png') no-repeat -200px -80px;
+	position: absolute;
+	z-index: 101;
+	padding: 30px 40px 34px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-box-shadow: 0 0 10px rgba(0,0,0,.4);
+}

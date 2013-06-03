@@ -1,0 +1,102 @@
+/**
+  * Editor toolbar
+  */
+
+.toolbar {
+    
+    width: 480px;
+    border-radius: $toolbar-height;
+    list-style: none;
+    margin: 10px auto;
+    -webkit-transition: opacity 0.4s ease-in, -webkit-transform 0.4s ease-in;
+
+    ul {
+        margin: 0;
+    }
+  
+    .tools {
+        padding-right: 10px;
+        width: 364px;
+        height: 61px;
+        float: left;
+
+        @include toolbar_background();
+
+        li {
+            display: inline-block;
+            height: $toolbar-height;
+            width: 56px;
+            margin: 0;
+            float: left;
+
+            @include toolbar_sep();
+
+            &:hover {
+                @include toolbar_hover();
+            }
+
+            .tool-icon {
+                cursor: pointer;
+                margin: auto;
+            }
+
+            &:first-child{
+                margin-left: -21px;
+                margin-top: -1px;
+                padding-left:7px; 
+                cursor: default;
+                background: none;
+
+                img {
+                    @include smooth;
+                }
+            }
+
+            &:nth-child(2) {
+                background: none;  
+            }
+
+            &:nth-child(2):hover {
+                background: url('../images/toolbar/hover.png') 50% 50% no-repeat; 
+            }      
+        }
+    }
+
+    .done {
+        width: 70px;
+        height: $toolbar-height - 4px;
+        border-radius: $toolbar-height;
+        border: solid 2px #9099a4;
+        float: right;
+        cursor: pointer;
+    }
+
+    .flip-horizontal {
+        @include flip_horizontal();
+    }
+
+    .flip-vertical {
+        @include flip_vertical();
+    }
+
+    .zoom-in {
+        @include zoom_in();
+    }
+
+    .zoom-out {
+        @include zoom_out();
+    }
+
+    .change-image {
+        @include change_image();
+    }
+
+    .done {
+        @include done_image();
+    }
+
+    &.hidden{
+        opacity: 0;
+        -webkit-transform:translate3d(0,-600px,0);
+    };
+}

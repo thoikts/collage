@@ -1,0 +1,47 @@
+/**
+  * Container positions
+  */
+
+
+.frame-container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -$frame-height/2;
+   margin-left: -$frame-width/2;
+}
+
+
+.toolbar-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: (-$toolbar-height/2) + (-$frame-height/2) + (-65px);
+    margin-left: -$toolbar-width/2;
+}
+
+
+.actions-container {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: ($frame-height/2) + (20px);
+    margin-left: -$button-width/2;
+    text-align: center;
+}
+
+.sharing-container{
+
+    width: $frame-width;
+	position: relative;
+    text-align: center;
+    margin: auto;
+
+    &.loading {
+        opacity: 0.2;
+    }
+
+    &.hidden {
+        display: none;
+    }   
+}

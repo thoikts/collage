@@ -1,0 +1,1908 @@
+/** 
+  * Assets for welcome popup
+  */
+/**
+  * Assets for Editor page
+  */
+/**
+  * Assets for Toolbar
+  */
+/**
+  * Assets for Collage page
+  */
+@-webkit-keyframes slideIn {
+  /* line 17, _transitions.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-150px, 0, 0);
+  }
+
+  /* line 18, _transitions.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  /* line 22, _transitions.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(150px, 0, 0);
+  }
+
+  /* line 23, _transitions.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 27, _transitions.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 28, _transitions.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 32, _transitions.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 33, _transitions.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulsate {
+  /* line 37, _transitions.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+  }
+
+  /* line 38, _transitions.scss */
+  100% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8, 0.8);
+  }
+}
+
+/**
+  * Button styles
+  */
+/* line 5, _buttons.scss */
+.button {
+  height: 40px;
+  width: 150px;
+  margin: auto;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: HelveticaNeue-Light;
+  font-weight: 200;
+  margin: 10px 10px;
+}
+/* line 16, _buttons.scss */
+.button.blue {
+  background: -webkit-linear-gradient(#34bff3, #074aa2);
+  border-color: #34bff3 rgba(0, 0, 0, 0.1) #0568a6;
+  box-shadow: inset 0 1px #60cbfa, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+}
+/* line 23, _buttons.scss */
+.button.blue:hover {
+  background: -webkit-linear-gradient(#48c5fa, #1788d4);
+}
+/* line 27, _buttons.scss */
+.button.blue.light-border {
+  border-color: #34bff3;
+}
+/* line 32, _buttons.scss */
+.button.black {
+  background: -webkit-linear-gradient(#3b3b3b 0%, #1b1b1b 90%);
+  color: #fff;
+  border-color: #000;
+  box-shadow: inset 0px 1px 0 1px rgba(255, 255, 255, 0.1), 0px 2px 0 -1px rgba(51, 51, 51, 0.5);
+}
+/* line 38, _buttons.scss */
+.button.black:hover {
+  background: -webkit-linear-gradient(#3b3b3b 10%, #2a2a2a 90%);
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 7, _base.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  height: 100%;
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 18, _base.scss */
+body {
+  background: #202020;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 28, _base.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 37, _base.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 41, _base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 50, _base.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 58, _base.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 66, _base.scss */
+figure {
+  margin: 0;
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 79, _base.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 91, _base.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 103, _base.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 118, _base.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/* line 125, _base.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* line 6, _typography.scss */
+.center {
+  text-align: center;
+}
+
+/* line 7, _typography.scss */
+.left {
+  text-align: left;
+}
+
+/* line 8, _typography.scss */
+.right {
+  text-align: right;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 15, _typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 24, _typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 33, _typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 41, _typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 49, _typography.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 59, _typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 71, _typography.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 80, _typography.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 88, _typography.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 96, _typography.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 105, _typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 112, _typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 116, _typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 3, _layouts.scss */
+ul.missionary li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.missionary li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.face-to-face li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.face-to-face li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+
+/* line 3, _layouts.scss */
+ul.get-low li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 320px;
+}
+/* line 3, _layouts.scss */
+ul.get-low li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 160px;
+}
+
+/* line 3, _layouts.scss */
+ul.get-high li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 160px;
+}
+/* line 3, _layouts.scss */
+ul.get-high li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 320px;
+}
+
+/* line 3, _layouts.scss */
+ul.nationalism li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.nationalism li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 320px;
+  height: 480px;
+}
+
+/* line 3, _layouts.scss */
+ul.communism li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 320px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.communism li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 480px;
+}
+
+/* line 3, _layouts.scss */
+ul.threesome li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 160px;
+}
+/* line 3, _layouts.scss */
+ul.threesome li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 160px;
+}
+/* line 3, _layouts.scss */
+ul.threesome li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 160px;
+}
+
+/* line 3, _layouts.scss */
+ul.vertical-threesome li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.vertical-threesome li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.vertical-threesome li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 480px;
+}
+
+/* line 3, _layouts.scss */
+ul.couple-upstairs li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.couple-upstairs li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.couple-upstairs li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.couple-downstairs li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.couple-downstairs li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.couple-downstairs li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.communist-banana-split li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.communist-banana-split li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.communist-banana-split li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 113, _layouts.scss */
+ul.communist-banana-split li:nth-child(2) {
+  float: right;
+}
+
+/* line 3, _layouts.scss */
+ul.nationalist-banana-split li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.nationalist-banana-split li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.nationalist-banana-split li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.brick-on-two-sheets li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.brick-on-two-sheets li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.brick-on-two-sheets li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+
+/* line 3, _layouts.scss */
+ul.nationalist-divided li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.nationalist-divided li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.nationalist-divided li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+
+/* line 3, _layouts.scss */
+ul.communist-divided li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.communist-divided li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.communist-divided li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+
+/* line 3, _layouts.scss */
+ul.two-sheets-on-brick li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.two-sheets-on-brick li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.two-sheets-on-brick li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.four-stripes li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.four-stripes li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.four-stripes li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.four-stripes li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 120px;
+}
+
+/* line 3, _layouts.scss */
+ul.four-vertical-stripes li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.four-vertical-stripes li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.four-vertical-stripes li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.four-vertical-stripes li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 480px;
+}
+
+/* line 3, _layouts.scss */
+ul.foursquare li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.foursquare li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.foursquare li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.foursquare li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.four-vs-one li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.four-vs-one li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.four-vs-one li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.four-vs-one li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.four-vs-one li:nth-child(5) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+/* line 201, _layouts.scss */
+ul.four-vs-one li:nth-child(2) {
+  float: right;
+}
+
+/* line 3, _layouts.scss */
+ul.one-vs-four li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 480px;
+}
+/* line 3, _layouts.scss */
+ul.one-vs-four li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.one-vs-four li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.one-vs-four li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+/* line 3, _layouts.scss */
+ul.one-vs-four li:nth-child(5) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 120px;
+}
+
+/* line 3, _layouts.scss */
+ul.bunker li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 480px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.bunker li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.bunker li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.bunker li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.bunker li:nth-child(5) {
+  background-color: #d0d3d4;
+  width: 120px;
+  height: 240px;
+}
+/* line 226, _layouts.scss */
+ul.bunker li:nth-child(2) {
+  float: right;
+}
+
+/* line 3, _layouts.scss */
+ul.castle li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.castle li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.castle li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.castle li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.castle li:nth-child(5) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.dungeon li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.dungeon li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.dungeon li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.dungeon li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.dungeon li:nth-child(5) {
+  background-color: #d0d3d4;
+  width: 160px;
+  height: 240px;
+}
+
+/* line 3, _layouts.scss */
+ul.crocodile li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.crocodile li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 160px;
+}
+/* line 3, _layouts.scss */
+ul.crocodile li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.crocodile li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 160px;
+}
+/* line 3, _layouts.scss */
+ul.crocodile li:nth-child(5) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 160px;
+}
+
+/* line 3, _layouts.scss */
+ul.pizza li:nth-child(1) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 160px;
+}
+/* line 3, _layouts.scss */
+ul.pizza li:nth-child(2) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.pizza li:nth-child(3) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 160px;
+}
+/* line 3, _layouts.scss */
+ul.pizza li:nth-child(4) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 240px;
+}
+/* line 3, _layouts.scss */
+ul.pizza li:nth-child(5) {
+  background-color: #d0d3d4;
+  width: 240px;
+  height: 160px;
+}
+
+@-webkit-keyframes slideIn {
+  /* line 17, _transitions.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-150px, 0, 0);
+  }
+
+  /* line 18, _transitions.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  /* line 22, _transitions.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(150px, 0, 0);
+  }
+
+  /* line 23, _transitions.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 27, _transitions.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 28, _transitions.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 32, _transitions.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 33, _transitions.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulsate {
+  /* line 37, _transitions.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+  }
+
+  /* line 38, _transitions.scss */
+  100% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8, 0.8);
+  }
+}
+
+/** 
+  * Editor page
+  */
+/* line 8, _editor.scss */
+.editor {
+  height: 100%;
+}
+/* line 12, _editor.scss */
+.editor:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** 
+  * Collage scene
+  */
+/* line 23, _editor.scss */
+.scene {
+  height: 100%;
+  position: fixed;
+  left: 150px;
+  right: 0;
+  min-width: 480px;
+  background-image: url("../images/editor/logo-incrust.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 30, _editor.scss */
+.scene.expanded {
+  left: 0;
+}
+/* line 34, _editor.scss */
+.scene.unfixed {
+  position: relative;
+}
+
+/** 
+  * Layout and Filter panel
+  */
+/* line 45, _editor.scss */
+.panel {
+  float: left;
+  width: 150px;
+}
+/* line 50, _editor.scss */
+.panel.hidden {
+  display: none;
+}
+
+/* line 101, _editor.scss */
+.layout-panel {
+  -webkit-transition: all 0.4s ease-in-out;
+}
+/* line 60, _editor.scss */
+.layout-panel .panel-header {
+  position: fixed;
+  width: 150px;
+  top: 0px;
+  bottom: 0px;
+  height: 100px;
+  z-index: 1;
+  background-image: url("../images/welcome/logo-header-small.png");
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  background-color: #262626;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px;
+}
+/* line 72, _editor.scss */
+.layout-panel ul {
+  background: #262626;
+  position: absolute;
+  top: 100px;
+  width: 150px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px;
+}
+/* line 81, _editor.scss */
+.layout-panel ul li {
+  background-image: url("../images/editor/lineSep.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  margin: 18px auto;
+  padding: 0;
+  height: 110px;
+}
+/* line 88, _editor.scss */
+.layout-panel ul li img {
+  width: 90px;
+  height: 90px;
+}
+/* line 90, _editor.scss */
+.layout-panel ul li:last-child {
+  background-image: none;
+}
+/* line 96, _editor.scss */
+.layout-panel.hidden {
+  -webkit-transform: translate3d(-150px, 0, 0);
+}
+/* line 104, _editor.scss */
+.layout-panel .header-line {
+  height: 8px;
+  margin-bottom: 30px;
+  background-image: -webkit-gradient(linear, to left, to right, color-stop(20%, #575d64), color-stop(100%, #7f8890));
+  background-image: -webkit-linear-gradient(to left, #575d64 20%, #7f8890 100%);
+  background-image: -moz-linear-gradient(to left, #575d64 20%, #7f8890 100%);
+  background-image: -o-linear-gradient(to left, #575d64 20%, #7f8890 100%);
+  background-image: linear-gradient(to left, #575d64 20%, #7f8890 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left-color', endColorstr='$right-color');
+  background-position: 0% 0%;
+}
+
+/* line 111, _editor.scss */
+.filter-panel {
+  -webkit-transition: all 0.4s ease-in-out;
+}
+/* line 60, _editor.scss */
+.filter-panel .panel-header {
+  position: fixed;
+  width: 150px;
+  top: 0px;
+  bottom: 0px;
+  height: 100px;
+  z-index: 1;
+  background-image: url("../images/welcome/logo-header-small.png");
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  background-color: #262626;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px;
+}
+/* line 72, _editor.scss */
+.filter-panel ul {
+  background: #262626;
+  position: absolute;
+  top: 100px;
+  width: 150px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px;
+}
+/* line 81, _editor.scss */
+.filter-panel ul li {
+  background-image: url("../images/editor/lineSep.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  margin: 18px auto;
+  padding: 0;
+  height: 110px;
+}
+/* line 88, _editor.scss */
+.filter-panel ul li img {
+  width: 90px;
+  height: 90px;
+}
+/* line 90, _editor.scss */
+.filter-panel ul li:last-child {
+  background-image: none;
+}
+/* line 96, _editor.scss */
+.filter-panel.hidden {
+  -webkit-transform: translate3d(-150px, 0, 0);
+}
+/* line 114, _editor.scss */
+.filter-panel .header-line {
+  height: 8px;
+  margin-bottom: 30px;
+  background-image: -webkit-gradient(linear, to left, to right, color-stop(0%, #0a54a9), color-stop(92%, #35b8ee));
+  background-image: -webkit-linear-gradient(to left, #0a54a9 0%, #35b8ee 92%);
+  background-image: -moz-linear-gradient(to left, #0a54a9 0%, #35b8ee 92%);
+  background-image: -o-linear-gradient(to left, #0a54a9 0%, #35b8ee 92%);
+  background-image: linear-gradient(to left, #0a54a9 0%, #35b8ee 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left-color', endColorstr='$right-color');
+  background-position: 0% 0%;
+}
+
+/**
+  * Layout thumbnails
+  */
+/* line 125, _editor.scss */
+.layout {
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  opacity: 0.6;
+}
+/* line 131, _editor.scss */
+.layout.selected {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1.0;
+}
+
+/**
+  * Filter thumbnails
+  */
+/* line 141, _editor.scss */
+.filter {
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  opacity: 0.6;
+}
+/* line 147, _editor.scss */
+.filter.selected {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1.0;
+}
+
+/**
+  * Collage frame
+  */
+/* line 157, _editor.scss */
+.frame {
+  width: 480px;
+  height: 480px;
+  background-color: #202020;
+  border: solid 1px #CCC;
+  margin: auto;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 4px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all ease 0.2s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 169, _editor.scss */
+.frame.loading {
+  -webkit-transform: rotateZ(-450deg) translate(-1000px, -1000px);
+}
+/* line 173, _editor.scss */
+.frame ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* line 178, _editor.scss */
+.frame ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 192, _editor.scss */
+.frame ul li.empty {
+  background: url("../images/editor/click-to-add.png") no-repeat 50% 50%, -webkit-linear-gradient(#333333, #545454 100%);
+}
+/* line 196, _editor.scss */
+.frame ul li.loading {
+  background-image: url("../images/editor/loading.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 201, _editor.scss */
+.frame ul li.dim canvas {
+  opacity: 0.4;
+}
+/* line 208, _editor.scss */
+.frame.making {
+  -webkit-animation: pulsate 1s 0 infinite alternate backwards;
+}
+
+/** Collage animation **/
+/* line 215, _editor.scss */
+.making-collage {
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  margin-top: 288px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 226, _editor.scss */
+.making-collage.hidden {
+  opacity: 0;
+}
+
+/**
+  * Publish collage button
+  */
+/* line 235, _editor.scss */
+.actions-container {
+  -webkit-transition: opacity 0.4s ease-in;
+}
+/* line 238, _editor.scss */
+.actions-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}
+
+/**
+  * Offscreen canvas used for composition
+  */
+/* line 249, _editor.scss */
+.hidden-canvas {
+  display: none;
+}
+
+/**
+  * Tutorial text
+  */
+/* line 259, _editor.scss */
+.help-layout {
+  -webkit-transition: opacity 0.4s ease-in;
+  width: 328px;
+  height: 74px;
+  position: fixed;
+  top: 250px;
+  left: 125px;
+  background-image: url("../images/editor/help-layout.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 269, _editor.scss */
+.help-layout.hidden {
+  opacity: 0;
+}
+
+/**
+  * Sharing icons
+  */
+/* line 278, _editor.scss */
+.icons-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  min-width: 150px;
+  min-height: 43px;
+}
+/* line 287, _editor.scss */
+.icons-container li {
+  display: inline-block;
+}
+/* line 291, _editor.scss */
+.icons-container .share {
+  height: 43px;
+  width: 43px;
+  margin-right: 5px;
+  display: block;
+}
+/* line 298, _editor.scss */
+.icons-container .facebook {
+  background-image: url("../images/editor/share-fb-off.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 95, _assets.scss */
+.icons-container .facebook:hover {
+  background-image: url("../images/editor/share-fb-hover.png");
+}
+/* line 300, _editor.scss */
+.icons-container .twitter {
+  background-image: url("../images/editor/share-twitter-off.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 106, _assets.scss */
+.icons-container .twitter:hover {
+  background-image: url("../images/editor/share-twitter-hover.png");
+}
+/* line 302, _editor.scss */
+.icons-container .github {
+  background-image: url("../images/editor/share-github-off.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 117, _assets.scss */
+.icons-container .github:hover {
+  background-image: url("../images/editor/share-github-hover.png");
+}
+
+/**
+  * Editor toolbar
+  */
+/* line 5, _toolbar.scss */
+.toolbar {
+  width: 480px;
+  border-radius: 44px;
+  list-style: none;
+  margin: 10px auto;
+  -webkit-transition: opacity 0.4s ease-in, -webkit-transform 0.4s ease-in;
+}
+/* line 13, _toolbar.scss */
+.toolbar ul {
+  margin: 0;
+}
+/* line 17, _toolbar.scss */
+.toolbar .tools {
+  padding-right: 10px;
+  width: 364px;
+  height: 61px;
+  float: left;
+  background-image: url("../images/toolbar/back-toolbar.png");
+  background-repeat: no-repeat;
+  background-position: 69px -7px;
+}
+/* line 25, _toolbar.scss */
+.toolbar .tools li {
+  display: inline-block;
+  height: 44px;
+  width: 56px;
+  margin: 0;
+  float: left;
+  background: url("../images/toolbar/sep.png") 0% 50% no-repeat;
+}
+/* line 34, _toolbar.scss */
+.toolbar .tools li:hover {
+  background: url("../images/toolbar/hover.png") 50% 50% no-repeat, url("../images/toolbar/sep.png") 0% 50% no-repeat;
+}
+/* line 38, _toolbar.scss */
+.toolbar .tools li .tool-icon {
+  cursor: pointer;
+  margin: auto;
+}
+/* line 43, _toolbar.scss */
+.toolbar .tools li:first-child {
+  margin-left: -21px;
+  margin-top: -1px;
+  padding-left: 7px;
+  cursor: default;
+  background: none;
+}
+/* line 50, _toolbar.scss */
+.toolbar .tools li:first-child img {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 55, _toolbar.scss */
+.toolbar .tools li:nth-child(2) {
+  background: none;
+}
+/* line 59, _toolbar.scss */
+.toolbar .tools li:nth-child(2):hover {
+  background: url("../images/toolbar/hover.png") 50% 50% no-repeat;
+}
+/* line 65, _toolbar.scss */
+.toolbar .done {
+  width: 70px;
+  height: 40px;
+  border-radius: 44px;
+  border: solid 2px #9099a4;
+  float: right;
+  cursor: pointer;
+}
+/* line 74, _toolbar.scss */
+.toolbar .flip-horizontal {
+  height: 26px;
+  width: 32px;
+  padding: 9px 12px;
+  background: url("../images/toolbar/flip-horizontal.png") 50% 50% no-repeat;
+}
+/* line 78, _toolbar.scss */
+.toolbar .flip-vertical {
+  height: 27px;
+  width: 18px;
+  padding: 8.5px 12px;
+  background: url("../images/toolbar/flip-vertical.png") 50% 50% no-repeat;
+}
+/* line 82, _toolbar.scss */
+.toolbar .zoom-in {
+  height: 28px;
+  width: 32px;
+  padding: 8px 12px;
+  background: url("../images/toolbar/plus.png") 50% 50% no-repeat;
+}
+/* line 86, _toolbar.scss */
+.toolbar .zoom-out {
+  height: 28px;
+  width: 32px;
+  padding: 8px 12px;
+  background: url("../images/toolbar/minus.png") 50% 50% no-repeat;
+}
+/* line 90, _toolbar.scss */
+.toolbar .change-image {
+  height: 30px;
+  width: 42px;
+  padding: 5.5px 9px;
+  background: url("../images/toolbar/swap.png") 50% 50% no-repeat;
+}
+/* line 94, _toolbar.scss */
+.toolbar .done {
+  background: url("../images/toolbar/done.png") 50% 50% no-repeat;
+}
+/* line 98, _toolbar.scss */
+.toolbar.hidden {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -600px, 0);
+}
+
+/** 
+  * Collage sharing page 
+  */
+/* line 7, _collage.scss */
+.collage-holder img.collage {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 11, _collage.scss */
+.collage-holder img.collage.hidden {
+  opacity: 0;
+  -webkit-transform: translate(60px, 0) scale(0.8, 0.8);
+  -moz-transform: translate(60px, 0) scale(0.8, 0.8);
+  -ms-transform: translate(60px, 0) scale(0.8, 0.8);
+  -o-transform: translate(60px, 0) scale(0.8, 0.8);
+  transform: translate(60px, 0) scale(0.8, 0.8);
+}
+/* line 17, _collage.scss */
+.collage-holder .header-logo {
+  background-image: url("../images/welcome/logo-header.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  position: relative;
+  height: 82px;
+  width: 180px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-animation: fadeIn 0.4s ease-in;
+}
+/* line 28, _collage.scss */
+.collage-holder .frame-container {
+  position: relative;
+  margin: auto;
+  width: 480px;
+  top: 0%;
+  left: 0%;
+}
+/* line 36, _collage.scss */
+.collage-holder .sharing-container {
+  -webkit-animation: fadeIn 0.4s ease-in;
+}
+/* line 40, _collage.scss */
+.collage-holder .sharing-block {
+  height: 39px;
+  width: 480px;
+}
+/* line 45, _collage.scss */
+.collage-holder .share-url {
+  background-color: #262626;
+  color: white;
+  font-family: HelveticaNeue;
+  border: none;
+  padding: 7px 10px;
+  display: inline-block;
+  position: relative;
+  top: -14px;
+  width: 358px;
+}
+/* line 57, _collage.scss */
+.collage-holder .share {
+  display: inline-block;
+  height: 39px;
+  width: 47px;
+}
+/* line 62, _collage.scss */
+.collage-holder .share.facebook {
+  background-image: url("../images/collage/facebook-icon-reg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 217, _assets.scss */
+.collage-holder .share.facebook:hover {
+  background-image: url("../images/collage/facebook-icon-hover.png");
+}
+/* line 66, _collage.scss */
+.collage-holder .share.twitter {
+  background-image: url("../images/collage/twitter-icon-reg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 229, _assets.scss */
+.collage-holder .share.twitter:hover {
+  background-image: url("../images/collage/twitter-icon-hover.png");
+}
+/* line 71, _collage.scss */
+.collage-holder .retry-or-save {
+  margin: auto;
+  width: 480px;
+}
+
+/**
+  * Container positions
+  */
+/* line 6, _containers.scss */
+.frame-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -240px;
+  margin-left: -240px;
+}
+
+/* line 15, _containers.scss */
+.toolbar-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -327px;
+  margin-left: -240px;
+}
+
+/* line 24, _containers.scss */
+.actions-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 260px;
+  margin-left: -75px;
+  text-align: center;
+}
+
+/* line 33, _containers.scss */
+.sharing-container {
+  width: 480px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+/* line 40, _containers.scss */
+.sharing-container.loading {
+  opacity: 0.2;
+}
+/* line 44, _containers.scss */
+.sharing-container.hidden {
+  display: none;
+}
+
+/**
+  * Welcome modal popup
+  */
+/* line 5, _welcome.scss */
+.welcome {
+  height: 400px;
+  width: 620px;
+  margin-left: -310px;
+  top: 140px;
+  left: 50%;
+  position: fixed;
+}
+
+/* line 14, _welcome.scss */
+.welcome-title {
+  height: 82px;
+  width: 180px;
+  margin: auto;
+  position: relative;
+  top: -140px;
+  background-image: url("../images/welcome/logo-header.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+
+/* line 23, _welcome.scss */
+.welcome-collage {
+  height: 335px;
+  width: 335px;
+  float: right;
+  position: relative;
+  left: 80px;
+  top: -80px;
+  background-image: url("../images/welcome/collage-front.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  -webkit-transform: rotate(3deg);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+}
+
+/* line 36, _welcome.scss */
+.welcome-text {
+  font-family: HelveticaNeue-Light;
+  font-size: 28px;
+  background: -webkit-linear-gradient(#929ba6 7%, #7a838b 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* line 42, _welcome.scss */
+.collage-text {
+  position: relative;
+  top: 13px;
+  left: 2px;
+}
+
+/* line 50, _welcome.scss */
+.services p {
+  font-size: 20px;
+  float: left;
+  margin: 10px 0;
+}
+/* line 56, _welcome.scss */
+.services .logos {
+  margin: 10px 0;
+  padding-left: 20px;
+  display: inline-block;
+  height: 26px;
+}
+/* line 63, _welcome.scss */
+.services .logos li {
+  display: inline-block;
+}
+/* line 67, _welcome.scss */
+.services .logos .facebook {
+  background-image: url("../images/welcome/logo-facebook.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 26px;
+  width: 16px;
+}
+/* line 71, _welcome.scss */
+.services .logos .flickr {
+  background-image: url("../images/welcome/logo-flickr.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 20px;
+  width: 28px;
+}
+/* line 75, _welcome.scss */
+.services .logos .instagram {
+  background-image: url("../images/welcome/logo-instagram.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 26px;
+  width: 26px;
+}
+
+/* line 81, _welcome.scss */
+.close-reveal-modal {
+  position: relative;
+  left: 50%;
+  margin-left: -75px;
+  display: block;
+  top: 80px;
+}
+
+/* line 89, _welcome.scss */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+/* line 101, _welcome.scss */
+.reveal-modal {
+  visibility: hidden;
+  background: #eeeeee url("../images/welcome/modal-gloss.png") no-repeat -200px -80px;
+  position: absolute;
+  z-index: 101;
+  padding: 30px 40px 34px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/** 
+  * Non-supported browser
+  */
+/* line 5, _browser.scss */
+.no-browser-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  text-align: center;
+  background-image: url("../images/browser/no-chrome.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

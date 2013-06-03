@@ -1,0 +1,602 @@
+{
+	"layout" : [
+		{
+			"tiles" :  [
+		        {
+                    "left" : 0, 
+                    "top" : 0,
+                    "width" : 480,
+                    "height" : 240, 
+                    "frame" : "images/frames/2-up-horizontal/up.png"
+                },
+		        {
+                    "left" : 0, 
+                    "top" : 240,
+                    "width" : 480,
+                    "height" : 240,
+                    "frame" : "images/frames/2-up-horizontal/down.png"
+                }
+    		],
+
+            "cssClass" : "missionary",
+    		"thumbUrl" : "images/frames/2-up-horizontal/thumb-90.png"
+		},
+		{
+			"tiles" :  [
+		        {
+                    "left" : 0, 
+                    "top" : 0,
+                    "width" : 240,
+                    "height" : 480,
+                    "frame" : "images/frames/2-up-vertical/left.png"
+                },
+		        {
+                    "left" : 240, 
+                    "top" : 0,
+                    "width" : 240,
+                    "height" : 480,
+                    "frame" : "images/frames/2-up-vertical/right.png"
+                }
+    		],
+
+            "cssClass" : "face-to-face",
+    		"thumbUrl" : "images/frames/2-up-vertical/thumb-90.png"
+		},
+		{
+			"tiles" :  [
+		        {
+                    "left" : 0, 
+                    "top" : 0,
+                    "width" : 480,
+                    "height" : 160,
+                    "frame" : "images/frames/3-up-horizontal/up.png"
+                },
+		        {
+                    "left" : 0, 
+                    "top" : 160,
+                    "width" : 480,
+                    "height" : 160,
+                    "frame" : "images/frames/3-up-horizontal/mid.png"
+                },
+		        {
+                    "left" : 0, 
+                    "top" : 320,
+                    "width" : 480,
+                    "height" : 160,
+                    "frame" : "images/frames/3-up-horizontal/down.png"
+                }
+    		],
+
+            "cssClass" : "threesome",
+    		"thumbUrl" : "images/frames/3-up-horizontal/thumb-90.png"
+		},
+		{
+			"tiles" :  [
+		        {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 160, 
+                    "height" : 480,
+                    "frame" : "images/frames/3-up-vertical/left.png"
+                },
+		        {
+                    "left" : 160, 
+                    "top" : 0, 
+                    "width" : 160, 
+                    "height" : 480,
+                    "frame" : "images/frames/3-up-vertical/mid.png"
+                },
+		        {
+                    "left" : 320, 
+                    "top" : 0, 
+                    "width" : 160, 
+                    "height" : 480,
+                    "frame" : "images/frames/3-up-vertical/right.png"
+                }
+    		],
+
+            "cssClass" : "vertical-threesome",
+    		"thumbUrl" : "images/frames/3-up-vertical/thumb-90.png"
+		},
+		{
+			"tiles" :  [
+		        {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 480, 
+                    "height" : 320,
+                    "frame" : "images/frames/big-small-horizontal/up.png"
+                },
+		        {
+                    "left" : 0, 
+                    "top" : 320, 
+                    "width" : 480, 
+                    "height" : 160,
+                    "frame" : "images/frames/big-small-horizontal/down.png"
+                }
+    		],
+
+            "cssClass" : "get-low",
+    		"thumbUrl" : "images/frames/big-small-horizontal/thumb-90.png"
+		},
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 320, 
+                    "height" : 480,
+                    "frame" : "images/frames/big-small-vertical/left.png"
+                },
+                {
+                    "left" : 320, 
+                    "top" : 0, 
+                    "width" : 160, 
+                    "height" : 480,
+                    "frame" : "images/frames/big-small-vertical/right.png"
+                }
+            ],
+
+            "cssClass" : "communism",
+            "thumbUrl" : "images/frames/big-small-vertical/thumb-90.png"
+        },
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 480, 
+                    "height" : 160,
+                    "frame" : "images/frames/small-big-horizontal/up.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 160, 
+                    "width" : 480, 
+                    "height" : 320,
+                    "frame" : "images/frames/small-big-horizontal/down.png"
+                }
+            ],
+
+            "cssClass" : "get-high",
+            "thumbUrl" : "images/frames/small-big-horizontal/thumb-90.png"
+        },
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 160, 
+                    "height" : 480,
+                    "frame" : "images/frames/small-big-vertical/left.png"
+                },
+                {
+                    "left" : 160, 
+                    "top" : 0, 
+                    "width" : 320, 
+                    "height" : 480,
+                    "frame" : "images/frames/small-big-vertical/right.png"
+                }
+            ],
+
+            "cssClass" : "nationalism",
+            "thumbUrl" : "images/frames/small-big-vertical/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 480, 
+                    "height" : 240,
+                    "frame" : "images/frames/1-2-horizontal/frame-up.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 240, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/1-2-horizontal/frame-downleft.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 240, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/1-2-horizontal/frame-downright.png"
+                }
+            ],
+
+            "cssClass" : "couple-downstairs",
+            "thumbUrl" : "images/frames/1-2-horizontal/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 480,
+                    "frame" : "images/frames/1-2-vertical/frame-left.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/1-2-vertical/frame-upright.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 240, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/1-2-vertical/frame-downright.png"
+                }
+            ],
+
+            "cssClass" : "nationalist-banana-split",
+            "thumbUrl" : "images/frames/1-2-horizontal/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-2-square/frame-upleft.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-2-square/frame-upright.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 240, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-2-square/frame-downleft.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 240, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-2-square/frame-downright.png"
+                }
+            ],
+
+            "cssClass" : "foursquare",
+            "thumbUrl" : "images/frames/2-2-square/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 480, 
+                    "height" : 240,
+                    "frame" : "images/frames/big-small-small-horizontal/frame-up.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 240, 
+                    "width" : 480, 
+                    "height" : 120,
+                    "frame" : "images/frames/big-small-small-horizontal/frame-mid.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 360, 
+                    "width" : 480,
+                    "height" : 120,
+                    "frame" : "images/frames/big-small-small-horizontal/frame-down.png"
+                }
+            ],
+
+            "cssClass" : "brick-on-two-sheets",
+            "thumbUrl" : "images/frames/big-small-small-horizontal/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 480,
+                    "frame" : "images/frames/big-small-small-vertical/frame-left.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 120, 
+                    "height" : 480,
+                    "frame" : "images/frames/big-small-small-vertical/frame-mid.png"
+                },
+                {
+                    "left" : 360, 
+                    "top" : 0, 
+                    "width" : 120,
+                    "height" : 480,
+                    "frame" : "images/frames/big-small-small-vertical/frame-right.png"
+                }
+            ],
+
+            "cssClass" : "nationalist-divided",
+            "thumbUrl" : "images/frames/big-small-small-vertical/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 480, 
+                    "height" : 120,
+                    "frame" : "images/frames/small-small-big-horizontal/frame-up.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 120, 
+                    "width" : 480, 
+                    "height" : 120,
+                    "frame" : "images/frames/small-small-big-horizontal/frame-mid.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 240, 
+                    "width" : 480,
+                    "height" : 240,
+                    "frame" : "images/frames/small-small-big-horizontal/frame-down.png"
+                }
+            ],
+
+            "cssClass" : "two-sheets-on-brick",
+            "thumbUrl" : "images/frames/small-small-big-horizontal/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 120, 
+                    "height" : 480,
+                    "frame" : "images/frames/small-small-big-vertical/frame-left.png"
+                },
+                {
+                    "left" : 120, 
+                    "top" : 0, 
+                    "width" : 120, 
+                    "height" : 480,
+                    "frame" : "images/frames/small-small-big-vertical/frame-mid.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 240,
+                    "height" : 480,
+                    "frame" : "images/frames/small-small-big-vertical/frame-right.png"
+                }
+            ],
+
+            "cssClass" : "communist-divided",
+            "thumbUrl" : "images/frames/small-small-big-vertical/thumb-90.png"
+        },
+
+
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-3-horizontal/frame-upleft.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-3-horizontal/frame-upright.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 240, 
+                    "width" : 160,
+                    "height" : 240,
+                    "frame" : "images/frames/2-3-horizontal/frame-downleft.png"
+                },
+                {
+                    "left" : 160, 
+                    "top" : 240, 
+                    "width" : 160, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-3-horizontal/frame-downmid.png"
+                },
+                {
+                    "left" : 320, 
+                    "top" : 240, 
+                    "width" : 160, 
+                    "height" : 240,
+                    "frame" : "images/frames/2-3-horizontal/frame-downright.png"
+                }
+            ],
+
+            "cssClass" : "dungeon",
+            "thumbUrl" : "images/frames/2-3-horizontal/thumb-90.png"
+        },
+
+      
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 480, 
+                    "height" : 120,
+                    "frame" : "images/frames/4-up-horizontal/frame-up.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 120, 
+                    "width" : 480, 
+                    "height" : 120,
+                    "frame" : "images/frames/4-up-horizontal/frame-mid.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 240, 
+                    "width" : 480, 
+                    "height" : 120,
+                    "frame" : "images/frames/4-up-horizontal/frame-mid.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 360, 
+                    "width" : 480, 
+                    "height" : 120,
+                    "frame" : "images/frames/4-up-horizontal/frame-down.png"
+                }
+            ],
+
+            "cssClass" : "four-stripes",
+            "thumbUrl" : "images/frames/4-up-horizontal/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 120, 
+                    "height" : 480,
+                    "frame" : "images/frames/4-up-vertical/frame-left.png"
+                },
+                {
+                    "left" : 120, 
+                    "top" : 0, 
+                    "width" : 120, 
+                    "height" : 480,
+                    "frame" : "images/frames/4-up-vertical/frame-mid.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 120, 
+                    "height" : 480,
+                    "frame" : "images/frames/4-up-vertical/frame-mid.png"
+                },
+                {
+                    "left" : 360, 
+                    "top" : 0, 
+                    "width" : 120, 
+                    "height" : 480,
+                    "frame" : "images/frames/4-up-vertical/frame-right.png"
+                }
+            ],
+
+            "cssClass" : "four-vertical-stripes",
+            "thumbUrl" : "images/frames/4-up-vertical/thumb-90.png"
+        },
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 120,
+                    "frame" : "images/frames/4-1-vertical/frame-upleft.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 480,
+                    "frame" : "images/frames/4-1-vertical/frame-right.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 120, 
+                    "width" : 240, 
+                    "height" : 120,
+                    "frame" : "images/frames/4-1-vertical/frame-midleft.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 240, 
+                    "width" : 240,
+                    "height" : 120,
+                    "frame" : "images/frames/4-1-vertical/frame-midleft.png"
+                },
+                {
+                    "left" : 0, 
+                    "top" : 360, 
+                    "width" : 240, 
+                    "height" : 120,
+                    "frame" : "images/frames/4-1-vertical/frame-downleft.png"
+                }
+            ],
+
+            "cssClass" : "four-vs-one",
+            "thumbUrl" : "images/frames/4-1-vertical/thumb-90.png"
+        },  
+
+        {
+            "tiles" :  [
+                {
+                    "left" : 0, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 480,
+                    "frame" : "images/frames/1-4-vertical/frame-left.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 0, 
+                    "width" : 240, 
+                    "height" : 120,
+                    "frame" : "images/frames/1-4-vertical/frame-upright.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 120, 
+                    "width" : 240,
+                    "height" : 120,
+                    "frame" : "images/frames/1-4-vertical/frame-midright.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 240, 
+                    "width" : 240, 
+                    "height" : 120,
+                    "frame" : "images/frames/1-4-vertical/frame-midright.png"
+                },
+                {
+                    "left" : 240, 
+                    "top" : 360, 
+                    "width" : 240, 
+                    "height" : 120,
+                    "frame" : "images/frames/1-4-vertical/frame-downright.png"
+                }
+            ],
+
+            "cssClass" : "one-vs-four",
+            "thumbUrl" : "images/frames/1-4-vertical/thumb-90.png"
+        }
+        
+	]
+}

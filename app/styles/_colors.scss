@@ -1,0 +1,47 @@
+@import "compass/css3/images";
+
+$white: #fff;
+$page-background: #202020; 
+$dark-grey: rgba(55,58,54,1);
+$light-grey: rgba(124,134,141,1);
+$faux-blanc: rgba(208,211,212,1);
+$dark-blue: rgba(10,84,169,1);
+$light-blue: rgba(61,181,230,1);
+$panel-background: #262626;
+
+$blue-button-gradient: -webkit-linear-gradient(#34bff3,#074aa2);
+$blue-button-hover-gradient: -webkit-linear-gradient(#48c5fa,#1788d4);
+
+$black-button-gradient: -webkit-linear-gradient(#3b3b3b 0%, #1b1b1b 90%);
+$black-button-hover-gradient: -webkit-linear-gradient(#3b3b3b 10%, #2a2a2a 90%);
+
+@mixin page-background {
+   	background: $page-background;
+    background-attachment: fixed;
+}
+
+@mixin layout-text-gradient {
+    background: -webkit-linear-gradient(#0ff6fe 0%,#35b8ee 32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin grey-text-gradient {
+    background: -webkit-linear-gradient(#929ba6 7%, #7a838b 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin layout_line {
+    $left-color:#575d64; $right-color:#7f8890;
+    @include background-image(linear-gradient(to left, $left-color 20%,$right-color 100%));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left-color', endColorstr='$right-color');
+    background-position: 0% 0%;
+}
+
+@mixin filter_line {
+    $left-color:#0a54a9; $right-color:#35b8ee;
+    @include background-image(linear-gradient(to left, $left-color 0%,$right-color 92%));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left-color', endColorstr='$right-color');
+    background-position: 0% 0%;
+}

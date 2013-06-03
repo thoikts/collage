@@ -1,0 +1,43 @@
+@import "compass/css3";
+
+@mixin transition($duration,$timing:ease-in,$property:all,$delay:0){
+  @include transition-property($property);
+  @include transition-duration($duration);
+  @include transition-timing-function($timing);
+  @include transition-delay($delay);
+};
+
+
+@mixin smooth {
+    @include transition(0.5s,ease-out);
+}
+
+
+@-webkit-keyframes slideIn {
+  0%   { opacity: 0; -webkit-transform:translate3d(-$panel-width,0,0);}
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes slideOut {
+  0% { opacity: 1; -webkit-transform:translate3d($panel-width,0,0)}
+  100%   { opacity: 0;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0;}
+  100%   { opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+  0% { opacity: 1;}
+  100%   { opacity: 0;}
+}
+
+@-webkit-keyframes pulsate {
+  0% { opacity: 1; -webkit-transform:scale(1,1); }
+  100%   { opacity: 0.3; -webkit-transform:scale(0.8,0.8);}
+}
+
+@mixin pulsating {
+    -webkit-animation: pulsate 1s 0 infinite alternate backwards; 
+}

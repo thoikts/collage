@@ -1,0 +1,232 @@
+
+/** 
+  * Assets for welcome popup
+  */
+
+
+@mixin welcome_header {
+    background:{
+        image: url('../images/welcome/logo-header.png');
+        repeat: no-repeat;
+        position: 0% 0%;
+    }
+}
+
+@mixin welcome_header_small {
+    background:{
+        image: url('../images/welcome/logo-header-small.png');
+        repeat: no-repeat;
+        position: 65% 50%;
+    }
+}
+
+@mixin welcome_collage {
+    background:{
+        image: url('../images/welcome/collage-front.png');
+        repeat: no-repeat;
+        position: 0% 0%;
+    }
+}
+
+@mixin welcome_facebook() {
+    background:{
+        image: url('../images/welcome/logo-facebook.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+    height: 26px;
+    width: 16px;
+}
+
+@mixin welcome_flickr() {
+    background:{
+        image: url('../images/welcome/logo-flickr.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+    height: 20px;
+    width: 28px;
+}
+
+@mixin welcome_instagram() {
+    background:{
+        image: url('../images/welcome/logo-instagram.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+    height: 26px;
+    width: 26px;
+}
+
+
+/**
+  * Assets for Editor page
+  */
+
+
+@mixin layout_separator {
+    background:{
+        image: url('../images/editor/lineSep.png');
+        repeat: no-repeat;
+        position: 50% 100%;
+    }
+}
+
+@mixin click_to_add {
+    background: url('../images/editor/click-to-add.png') no-repeat 50% 50%,
+    -webkit-linear-gradient(#333,#545454 100%);
+}
+
+@mixin loading_spinner() {
+    background:{
+        image: url('../images/editor/loading.gif');
+        repeat: no-repeat;
+        position: 50% 50%;
+    } 
+}
+
+@mixin share_facebook() {
+    background:{
+        image: url('../images/editor/share-fb-off.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+
+    &:hover {
+        background-image: url('../images/editor/share-fb-hover.png');
+    }
+}
+
+@mixin share_twitter() {
+    background:{
+        image: url('../images/editor/share-twitter-off.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+    &:hover {
+        background-image: url('../images/editor/share-twitter-hover.png');
+    }
+}
+
+@mixin share_github() {
+    background:{
+        image: url('../images/editor/share-github-off.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+    &:hover {
+        background-image: url('../images/editor/share-github-hover.png');
+    }
+}
+
+@mixin logo_incrust() {
+    background:{
+        image: url('../images/editor/logo-incrust.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+}
+
+@mixin help_layout(){
+    background:{
+        image: url('../images/editor/help-layout.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+}
+
+
+/**
+  * Assets for Toolbar
+  */
+
+
+@mixin flip_horizontal {
+    height: 26px;
+    width: 32px;
+    padding: (($toolbar-height - 26px) / 2) 12px;
+    background:
+        url('../images/toolbar/flip-horizontal.png') 50% 50% no-repeat;
+}
+
+@mixin flip_vertical {
+    height: 27px;
+    width: 18px;
+    padding: (($toolbar-height - 27px) / 2) 12px;
+    background:
+        url('../images/toolbar/flip-vertical.png') 50% 50% no-repeat;
+}
+
+@mixin zoom_in {
+    height: 28px;
+    width: 32px;
+    padding: (($toolbar-height - 28px) / 2) 12px;
+    background: url('../images/toolbar/plus.png') 50% 50% no-repeat;
+}
+
+@mixin zoom_out {
+    height: 28px;
+    width: 32px;
+    padding: (($toolbar-height - 28px) / 2) 12px;
+    background: url('../images/toolbar/minus.png') 50% 50% no-repeat;
+}
+
+@mixin change_image {
+    height: 30px;
+    width: 42px;
+    padding: (($toolbar-height - 33px) / 2) 9px;
+    background: url('../images/toolbar/swap.png') 50% 50% no-repeat;
+}
+
+@mixin done_image {
+    background: 
+        url('../images/toolbar/done.png') 50% 50% no-repeat;
+}
+
+@mixin toolbar_sep {
+    background: url('../images/toolbar/sep.png') 0% 50% no-repeat;
+
+}
+
+@mixin toolbar_background {
+    background:{
+        image: url('../images/toolbar/back-toolbar.png');
+        repeat: no-repeat;
+        position: 69px -7px;
+    }
+}
+
+@mixin toolbar_hover {
+    background: 
+        url('../images/toolbar/hover.png') 50% 50% no-repeat,
+        url('../images/toolbar/sep.png') 0% 50% no-repeat;
+}
+
+/**
+  * Assets for Collage page
+  */
+
+
+@mixin share_collage_facebook() {
+    background:{
+        image: url('../images/collage/facebook-icon-reg.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+
+    &:hover {
+        background-image: url('../images/collage/facebook-icon-hover.png');
+    }
+}
+
+@mixin share_collage_twitter() {
+    background:{
+        image: url('../images/collage/twitter-icon-reg.png');
+        repeat: no-repeat;
+        position: 50% 50%;
+    }
+
+    &:hover {
+        background-image: url('../images/collage/twitter-icon-hover.png');
+    }
+}

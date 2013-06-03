@@ -1,0 +1,47 @@
+[
+    {
+        "name" : "a simple filter",
+        "type" : "clear",
+        "thumbUrl" : "images/filters/original.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "grayscale",
+        "thumbUrl" : "images/filters/grayscale.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "sepia",
+        "thumbUrl" : "images/filters/sepia.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "sepia2",
+        "thumbUrl" : "images/filters/sepia2.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "invert",
+        "thumbUrl" : "images//filters/invert.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "convolute",
+        "thumbUrl" : "images/filters/convolute.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "superconvolute",
+        "thumbUrl" : "images/filters/super-convolute.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "noise",
+        "thumbUrl" : "images/filters/noise.png"
+    },
+    {
+        "name" : "a simple filter",
+        "type" : "pixelate",
+        "thumbUrl" : "images/filters/pixelate.png"
+    }
+]

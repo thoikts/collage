@@ -1,0 +1,42 @@
+/**
+  * Button styles
+  */
+
+.button {
+    
+    height: $button-height;
+    width: $button-width;
+    margin: auto;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: HelveticaNeue-Light;
+    font-weight: 200;
+    margin: 10px 10px;
+
+    &.blue {
+        background: $blue-button-gradient;
+        border-color: #34bff3 rgba(0,0,0,0.1) #0568a6;
+        box-shadow: inset 0 1px #60cbfa,0 0 0 1px rgba(0,0,0,0.4);
+        color: #fff;
+        text-shadow: 0 -1px rgba(0,0,0,0.5);
+
+        &:hover {
+            background: $blue-button-hover-gradient;
+        };
+
+        &.light-border {
+            border-color: #34bff3;
+        }
+    }   
+
+    &.black {
+        background: $black-button-gradient;
+        color: #fff;
+        border-color: #000;
+        box-shadow: inset 0px 1px 0 1px rgba(255,255,255,0.1), 0px 2px 0 -1px rgba(51,51,51, 0.5);
+
+        &:hover {
+            background: $black-button-hover-gradient;
+        };
+    }
+}

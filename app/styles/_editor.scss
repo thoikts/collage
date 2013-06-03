@@ -1,0 +1,303 @@
+@import "compass/css3/transform";
+
+
+/** 
+  * Editor page
+  */
+
+.editor {
+    
+    height: 100%;
+
+    &:after{ 
+        content:"";
+        display:table;
+        clear: both; 
+    }
+}
+
+/** 
+  * Collage scene
+  */
+
+.scene { 
+    height: 100%;
+    position: fixed;
+    left: $panel-width;
+    right: 0;
+    min-width: $frame-width;
+
+    &.expanded {
+        left: 0;
+    }
+
+    &.unfixed {
+        position: relative;
+    }
+
+    @include logo_incrust();
+}
+
+/** 
+  * Layout and Filter panel
+  */
+
+.panel {
+
+    float: left;
+    width: $panel-width;
+
+    &.hidden{
+        display: none;
+        
+    }
+}
+
+@mixin panel($item-width,$item-height){
+    
+    -webkit-transition: all 0.4s ease-in-out;
+
+    .panel-header {
+        position: fixed;
+        width: 150px;
+        top: 0px;
+        bottom: 0px;
+        height: 100px;
+        z-index: 1;
+        @include welcome_header_small();
+        background-color: $panel-background;
+        -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px;
+    }
+
+    ul {
+        background: $panel-background;
+        position: absolute;
+        top: 100px;
+        width: $panel-width;
+        list-style-type: none;
+        margin: 0; padding: 10px 0;
+        -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px;
+
+        li {
+
+            @include layout_separator();
+            margin: 18px auto;
+            padding: 0;
+            height: $item-height + 20px; 
+
+            img { width: $item-width; height: $item-height; }
+
+            &:last-child {
+                background-image: none;
+            }
+        }
+    }
+
+    &.hidden{
+        -webkit-transform:translate3d(-$panel-width,0,0);
+    };
+}
+
+.layout-panel {
+    @include panel($layout-thumbnail-width,$layout-thumbnail-height);
+
+    .header-line {
+        height: 8px;
+        margin-bottom: 30px;
+        @include layout_line();
+    }
+}
+
+.filter-panel {
+    @include panel($filter-thumbnail-width,$filter-thumbnail-height);
+
+    .header-line {
+        height: 8px;
+        margin-bottom: 30px;
+        @include filter_line();
+    }
+}
+
+/**
+  * Layout thumbnails
+  */
+
+.layout {
+    cursor: pointer;
+    width: $layout-thumbnail-width;
+    height: $layout-thumbnail-height;
+    opacity: 0.6;
+
+    &.selected {
+        @include transform(scale(1.1,1.1));
+        opacity: 1.0;
+    }
+}
+
+/**
+  * Filter thumbnails
+  */
+
+.filter {
+    cursor: pointer;
+    width: $filter-thumbnail-width;
+    height: $filter-thumbnail-height;
+    opacity: 0.6;
+
+    &.selected {
+        @include transform(scale(1.1,1.1));
+        opacity: 1.0;
+    }
+}
+
+/**
+  * Collage frame
+  */
+
+.frame {
+    width:$frame-width;
+    height:$frame-height;
+    background-color: $page-background;
+    border:solid 1px #CCC;
+    margin:auto;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 4px;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all ease 0.2s;
+
+    @include smooth;
+
+    &.loading {
+        -webkit-transform: rotateZ(-450deg) translate(-1000px, -1000px);
+    }
+
+    ul{
+
+        list-style-type:none;
+        margin:0; padding:0; position:relative;
+
+        li{
+            margin:0; padding:0;       
+            position:relative;
+            float:left;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: top;
+            zoom: 1;
+            *display: inline;
+
+            cursor: pointer;
+
+            @include smooth;
+            
+            &.empty {
+                @include click_to_add();
+            }
+
+            &.loading{
+                @include loading_spinner();
+            }
+
+            &.dim {
+                canvas {
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+
+    &.making {
+        @include pulsating;
+    }
+}
+
+/** Collage animation **/
+
+.making-collage {
+    position: absolute;
+    top: 50%;
+    color: #FFF;
+    margin-top: $frame-height*0.6;
+    left: 0;
+    right: 0;
+    text-align:center;
+
+    @include smooth;
+
+    &.hidden{
+        opacity:0;
+    };
+}
+
+/**
+  * Publish collage button
+  */
+
+.actions-container {
+    -webkit-transition: opacity 0.4s ease-in;
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+/**
+  * Offscreen canvas used for composition
+  */
+
+.hidden-canvas {
+    
+    display: none;
+}
+
+
+/**
+  * Tutorial text
+  */
+
+.help-layout {
+
+    -webkit-transition: opacity 0.4s ease-in;    
+    width: 328px;
+    height: 74px;
+    position: fixed;
+    top: 250px;
+    left: 125px;
+    @include help_layout();
+
+    &.hidden {
+        opacity: 0;
+    }
+}
+
+/**
+  * Sharing icons
+  */
+
+.icons-container {
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    min-width: 150px;
+    min-height: 43px;
+
+    li {
+        display: inline-block;
+    }
+
+    .share {
+        height: 43px;
+        width: 43px;
+        margin-right: 5px;
+        display: block;
+    }
+
+    .facebook { @include share_facebook();}
+
+    .twitter { @include share_twitter();}
+
+    .github { @include share_github();}
+}

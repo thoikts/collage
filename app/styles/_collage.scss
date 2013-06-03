@@ -1,0 +1,75 @@
+/** 
+  * Collage sharing page 
+  */
+
+.collage-holder {
+
+	img.collage{
+
+		@include smooth;
+
+		&.hidden{
+			opacity: 0;
+			@include transform(translate(60px,0) scale(0.8,0.8)) ; 
+		}
+	} 
+
+	.header-logo {
+		@include welcome_header();
+		position: relative;
+		height: 82px;
+		width: 180px;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		-webkit-animation: fadeIn 0.4s ease-in;
+	}
+
+	.frame-container {
+		position: relative;
+		margin: auto;
+		width: $frame-width;
+		top: 0%;
+		left: 0%;
+	}
+
+	.sharing-container {
+		-webkit-animation: fadeIn 0.4s ease-in;
+	}
+
+	.sharing-block {
+		height: 39px;
+		width: $frame-width;
+	}
+
+	.share-url {
+		background-color: $panel-background;
+		color: white;
+		font-family: HelveticaNeue;
+		border: none;
+		padding: 7px 10px;
+		display: inline-block;
+		position: relative;
+		top: -14px;
+		width: 358px;
+	}
+
+	.share {
+		display: inline-block;
+		height: 39px;
+		width: 47px;
+
+		&.facebook {
+			@include share_collage_facebook();
+		}
+
+		&.twitter {
+			@include share_collage_twitter();
+		}
+	}
+
+	.retry-or-save {
+    	margin: auto;
+    	width: $frame-width;
+	}
+}

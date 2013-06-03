@@ -1,0 +1,11 @@
+temp
+dist
+.DS_Store
+.sass-cache
+**/*.css
+node_modules
+test/scripts
+server/*.pyc
+server/venv
+server/static
+server/templates

@@ -1,0 +1,269 @@
+@mixin build_list($widths,$heights,$colors,$base_width:$frame-width,$base_height:$frame-height){
+  @for $i from 1 through length($widths) {
+    li:nth-child(#{$i}){ 
+      background-color: #d0d3d4;
+      width: nth($widths, $i) * $base_width;
+      height: nth($heights, $i) *  $base_height;
+    }
+  }
+}
+
+
+ul.missionary {
+
+  $widths : 1 1;
+  $heights : 0.5 0.5;
+  $colors : #EB7F13 #EBB513;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.face-to-face {
+
+  $widths : 0.5 0.5;
+  $heights : 1 1;
+  $colors : #B5EB13 #13EBEB;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.get-low {
+
+  $widths : 1 1;
+  $heights : 2/3 1/3;
+  $colors : #13EB13 #EB7F13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.get-high {
+
+  $widths : 1 1;
+  $heights : 1/3 2/3;
+  $colors : #13EB13 #EB7F13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.nationalism {
+
+  $widths : 1/3 2/3;
+  $heights : 1 1;
+  $colors : #13EB13 #EB7F13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.communism {
+
+  $widths : 2/3 1/3;
+  $heights : 1 1;
+  $colors : #13EB13 #EB7F13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+
+ul.threesome {
+
+  $widths : 1 1 1;
+  $heights : 1/3 1/3 1/3;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.vertical-threesome {
+
+  $widths : 1/3 1/3 1/3;
+  $heights : 1 1 1;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.couple-upstairs {
+
+  $widths : 0.5 0.5 1;
+  $heights : 0.5 0.5 0.5;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.couple-downstairs {
+
+  $widths : 1 0.5 0.5;
+  $heights : 0.5 0.5 0.5;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.communist-banana-split {
+
+  $widths : 0.5 0.5 0.5;
+  $heights : 0.5 1 0.5;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+
+  //special needs
+
+  li:nth-child(2){
+    float: right;
+  };
+
+}
+
+ul.nationalist-banana-split {
+
+  $widths : 0.5 0.5 0.5;
+  $heights : 1 0.5 0.5;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.brick-on-two-sheets {
+
+  $widths : 1 1 1;
+  $heights : 0.5 0.25 0.25;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.nationalist-divided {
+
+  $widths : 0.5 0.25 0.25;
+  $heights : 1 1 1;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.communist-divided {
+
+  $widths : 0.25 0.25 0.5;
+  $heights : 1 1 1;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.two-sheets-on-brick {
+
+  $widths : 1 1 1;
+  $heights : 0.25 0.25 0.5;
+  $colors : #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.four-stripes {
+
+  $widths : 1 1 1 1;
+  $heights : 0.25 0.25 0.25 0.25;
+  $colors : #13EB13 #EB7F13 #B5EB13 #13EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.four-vertical-stripes {
+
+  $widths : 0.25 0.25 0.25 0.25;
+  $heights : 1 1 1 1;
+  $colors : #13EB13 #EB7F13 #B5EB13 #13EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.foursquare {
+
+  $widths : 0.5 0.5 0.5 0.5;
+  $heights : 0.5 0.5 0.5 0.5;
+  $colors : #13EB13 #EB7F13 #B5EB13 #13EB13;  
+
+  @include build_list($widths, $heights, $colors);
+}
+
+ul.four-vs-one {
+
+  $widths : 0.5 0.5 0.5 0.5 0.5;
+  $heights : 0.25 1 0.25 0.25 0.25;
+  $colors : #13EB13 #00A256 #B5EB13 #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+
+  //special needs
+
+  li:nth-child(2){
+    float: right;
+  };
+}
+
+ul.one-vs-four {
+
+  $widths : 0.5 0.5 0.5 0.5 0.5;
+  $heights : 1 0.25 0.25 0.25 0.25;
+  $colors : #FAF4E8 #00A256 #B5EB13 #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+
+}
+
+ul.bunker {
+
+  $widths : 1 0.25 0.25 0.25 0.25;
+  $heights : 0.5 0.5 0.5 0.5 0.5;
+  $colors : #EB7F13 #00A256 #B5EB13 #13EB13 #B5EB13 #13EB13 ;  
+
+  @include build_list($widths, $heights, $colors);
+
+  //special needs
+
+  li:nth-child(2){
+    float: right;
+  };
+}
+
+ul.castle {
+
+  $widths : 1/3 1/3 1/3 0.5 0.5;
+  $heights : 0.5 0.5 0.5 0.5 0.5;
+  $colors : #FAF4E8 #00A256 #B5EB13 #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+
+}
+
+ul.dungeon {
+
+  $widths : 0.5 0.5 1/3 1/3 1/3;
+  $heights : 0.5 0.5 0.5 0.5 0.5;
+  $colors : #FAF4E8 #00A256 #B5EB13 #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+
+}
+
+ul.crocodile {
+
+  $widths : 0.5 0.5 0.5 0.5 0.5;
+  $heights : 0.5 1/3 0.5 1/3 1/3;
+  $colors : #FAF4E8 #00A256 #B5EB13 #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+
+}
+
+ul.pizza {
+
+  $widths : 0.5 0.5 0.5 0.5 0.5;
+  $heights : 1/3 0.5 1/3 0.5 1/3;
+  $colors : #FAF4E8 #00A256 #B5EB13 #13EB13 #EB7F13 #B5EB13;  
+
+  @include build_list($widths, $heights, $colors);
+
+}
